@@ -1,0 +1,12 @@
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\bin\Debug\net5.0\Murad.AdvertisementApp.Common.deps.json
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\bin\Debug\net5.0\Murad.AdvertisementApp.Common.dll
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\bin\Debug\net5.0\Murad.AdvertisementApp.Common.pdb
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.csproj.AssemblyReference.cache
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.AssemblyInfoInputs.cache
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.AssemblyInfo.cs
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.csproj.CoreCompileInputs.cache
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.dll
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\refint\Murad.AdvertisementApp.Common.dll
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\Murad.AdvertisementApp.Common.pdb
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Common\obj\Debug\net5.0\ref\Murad.AdvertisementApp.Common.dll

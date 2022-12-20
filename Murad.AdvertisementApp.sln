@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murad.AdvertisementApp.Common", "Murad.AdvertisementApp.Common\Murad.AdvertisementApp.Common.csproj", "{EA44EA5E-CFDC-424D-87C1-EF7267509878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA44EA5E-CFDC-424D-87C1-EF7267509878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA44EA5E-CFDC-424D-87C1-EF7267509878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA44EA5E-CFDC-424D-87C1-EF7267509878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA44EA5E-CFDC-424D-87C1-EF7267509878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D8E8B3A-0F5C-4C1D-A44D-C736AE19EC4F}
+	EndGlobalSection
+EndGlobal
