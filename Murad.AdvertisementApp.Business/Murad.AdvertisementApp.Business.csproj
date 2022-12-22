@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Murad.AdvertisementApp.Common\Murad.AdvertisementApp.Common.csproj" />
+    <ProjectReference Include="..\Murad.AdvertisementApp.DataAccsess\Murad.AdvertisementApp.DataAccsess.csproj" />
+    <ProjectReference Include="..\Murad.AdvertisementApp.Dtos\Murad.AdvertisementApp.Dtos.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -5,9 +5,15 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murad.AdvertisementApp.Common", "Murad.AdvertisementApp.Common\Murad.AdvertisementApp.Common.csproj", "{EA44EA5E-CFDC-424D-87C1-EF7267509878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murad.AdvertisementApp.Entity", "Murad.AdvertisementApp.Entity\Murad.AdvertisementApp.Entity.csproj", "{9BBC8669-3F16-4A4C-BC40-3E70D406A898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murad.AdvertisementApp.Entity", "Murad.AdvertisementApp.Entity\Murad.AdvertisementApp.Entity.csproj", "{9BBC8669-3F16-4A4C-BC40-3E70D406A898}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murad.AdvertisementApp.DataAccsess", "Murad.AdvertisementApp.DataAccsess\Murad.AdvertisementApp.DataAccsess.csproj", "{240E57A8-5B8D-482B-B894-81CE97DE4878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murad.AdvertisementApp.DataAccsess", "Murad.AdvertisementApp.DataAccsess\Murad.AdvertisementApp.DataAccsess.csproj", "{240E57A8-5B8D-482B-B894-81CE97DE4878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murad.AdvertisementApp.Business", "Murad.AdvertisementApp.Business\Murad.AdvertisementApp.Business.csproj", "{6584B34B-4F85-46E0-9A9C-2FAB5B61B43F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murad.AdvertisementApp.UI", "Murad.AdvertisementApp.UI\Murad.AdvertisementApp.UI.csproj", "{D7F7E5E9-9851-4BD3-80D4-C7E58841E45F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murad.AdvertisementApp.Dtos", "Murad.AdvertisementApp.Dtos\Murad.AdvertisementApp.Dtos.csproj", "{22FC95C4-CDE9-46AA-BECE-9DF88990457A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{240E57A8-5B8D-482B-B894-81CE97DE4878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{240E57A8-5B8D-482B-B894-81CE97DE4878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{240E57A8-5B8D-482B-B894-81CE97DE4878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6584B34B-4F85-46E0-9A9C-2FAB5B61B43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6584B34B-4F85-46E0-9A9C-2FAB5B61B43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6584B34B-4F85-46E0-9A9C-2FAB5B61B43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6584B34B-4F85-46E0-9A9C-2FAB5B61B43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F7E5E9-9851-4BD3-80D4-C7E58841E45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F7E5E9-9851-4BD3-80D4-C7E58841E45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F7E5E9-9851-4BD3-80D4-C7E58841E45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F7E5E9-9851-4BD3-80D4-C7E58841E45F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FC95C4-CDE9-46AA-BECE-9DF88990457A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FC95C4-CDE9-46AA-BECE-9DF88990457A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FC95C4-CDE9-46AA-BECE-9DF88990457A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FC95C4-CDE9-46AA-BECE-9DF88990457A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

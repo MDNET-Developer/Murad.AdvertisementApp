@@ -1,0 +1,12 @@
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\bin\Debug\net5.0\Murad.AdvertisementApp.Dtos.deps.json
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\bin\Debug\net5.0\Murad.AdvertisementApp.Dtos.dll
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\bin\Debug\net5.0\Murad.AdvertisementApp.Dtos.pdb
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.csproj.AssemblyReference.cache
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.AssemblyInfoInputs.cache
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.AssemblyInfo.cs
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.csproj.CoreCompileInputs.cache
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.dll
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\refint\Murad.AdvertisementApp.Dtos.dll
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\Murad.AdvertisementApp.Dtos.pdb
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.Dtos\obj\Debug\net5.0\ref\Murad.AdvertisementApp.Dtos.dll

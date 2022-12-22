@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Murad.AdvertisementApp.Entity\Murad.AdvertisementApp.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

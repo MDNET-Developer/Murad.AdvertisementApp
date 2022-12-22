@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Murad.AdvertisementApp.UI.props" />
+</Project>
