@@ -12,7 +12,7 @@ namespace Murad.AdvertisementApp.Business.Interfaces
     public interface IService<CreateDto,ListDto,UpdateDto,T>
         where CreateDto: class ,IDto,new()
         where ListDto:class,IDto,new()
-        where UpdateDto:class,IDto,new()
+        where UpdateDto:class, IUpdateDto, new()
         where T:BaseEntity
     {
         Task<IResponse<CreateDto>> CreateAsync(CreateDto dto);

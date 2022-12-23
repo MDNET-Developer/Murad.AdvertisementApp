@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Murad.AdvertisementApp.Dtos.ProvidedServiceDtos
 {
-    public class ProvidedServiceUpdateDto:IDto
+    public class ProvidedServiceUpdateDto: IUpdateDto
     {
         public int Id { get; set; }
         public string Title { get; set; }
