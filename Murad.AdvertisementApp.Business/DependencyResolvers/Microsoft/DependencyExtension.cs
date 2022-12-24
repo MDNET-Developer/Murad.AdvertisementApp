@@ -3,7 +3,9 @@ using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Murad.AdvertisementApp.Business.Interfaces;
 using Murad.AdvertisementApp.Business.Mapping.AutoMapper;
+using Murad.AdvertisementApp.Business.Services;
 using Murad.AdvertisementApp.Business.ValidationRules;
 using Murad.AdvertisementApp.DataAccsess.Context;
 using Murad.AdvertisementApp.DataAccsess.UnitOfWork;
@@ -35,10 +37,13 @@ namespace Murad.AdvertisementApp.Business.DependencyResolvers.Microsoft
 
             var mapper = mapperConfugiration.CreateMapper();
             services.AddSingleton(mapper);
-
+            
             services.AddScoped<IUow, Uow>();
+            services.AddScoped<IProvidedServiceService, ProvidedServiceService>();
+
             services.AddTransient<IValidator<ProvidedServiceCreateDto>, ProvidedServiceCreateDtoValidator>();
             services.AddTransient<IValidator<ProvidedServiceUpdateDto>, ProvidedServiceUpdateDtoValidator>();
+       
         }
     }
 }
