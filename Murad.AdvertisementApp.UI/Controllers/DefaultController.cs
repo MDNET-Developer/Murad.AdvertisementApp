@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Murad.AdvertisementApp.Business.Interfaces;
+using Murad.AdvertisementApp.UI.Extensions;
+using System.Threading.Tasks;
 
 namespace Murad.AdvertisementApp.UI.Controllers
 {
@@ -12,10 +14,10 @@ namespace Murad.AdvertisementApp.UI.Controllers
             _providedServiceService = providedServiceService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var dataresult = _providedServiceService.GetAllAsync();
-            return View();
+            var dataresult = await _providedServiceService.GetAllAsync();
+            return this.ResponseView(dataresult);
         }
     }
 }
