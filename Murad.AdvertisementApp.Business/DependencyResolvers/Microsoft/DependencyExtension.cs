@@ -9,7 +9,7 @@ using Murad.AdvertisementApp.Business.Services;
 using Murad.AdvertisementApp.Business.ValidationRules;
 using Murad.AdvertisementApp.DataAccsess.Context;
 using Murad.AdvertisementApp.DataAccsess.UnitOfWork;
-using Murad.AdvertisementApp.Dtos.ProvidedServiceDtos;
+using Murad.AdvertisementApp.Dtos;
 using System.Runtime.ConstrainedExecution;
 
 namespace Murad.AdvertisementApp.Business.DependencyResolvers.Microsoft
@@ -33,6 +33,7 @@ namespace Murad.AdvertisementApp.Business.DependencyResolvers.Microsoft
             {
                 //opt.addprofile
                 opt.AddProfile(new ProvidedServiceProfile());
+                opt.AddProfile(new AdvertisementProfile());
             });
 
             var mapper = mapperConfugiration.CreateMapper();
@@ -40,9 +41,14 @@ namespace Murad.AdvertisementApp.Business.DependencyResolvers.Microsoft
             
             services.AddScoped<IUow, Uow>();
             services.AddScoped<IProvidedServiceService, ProvidedServiceService>();
+            services.AddScoped<IAdvertisementService, AdvertisementService>();
 
             services.AddTransient<IValidator<ProvidedServiceCreateDto>, ProvidedServiceCreateDtoValidator>();
             services.AddTransient<IValidator<ProvidedServiceUpdateDto>, ProvidedServiceUpdateDtoValidator>();
+
+            services.AddTransient<IValidator<AdvertisementCreateDto>, AdvertisementCreateDtoValidator>();
+            services.AddTransient<IValidator<AdvertisementUpdateDto>, AdvertisementUpdateDtoValidator>();
+
        
         }
     }

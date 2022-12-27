@@ -1,0 +1,51 @@
+﻿@model List<AdvertisementListDto>
+
+@{
+    ViewData["Title"] = "HR";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div style="background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 class="display-4"><strong>İnsan Resursları</strong></h1>
+        <p class="lead">Təqdim olunan vakansiyaları aktiv olaraq buradan izləyə bilərsiz.</p>
+        <br />
+    </div>
+</div>
+<br />
+<div class="row container-fluid">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6 pb-3">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">@item.Title</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">@item.Description</p>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="#" class="btn btn-primary">Müraciət et</a>
+                    }
+                    else
+                    {
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Qeydiyyatdan keç</a></li>
+                                <li class="breadcrumb-item"><a href="#">Daxil ol</a></li>
+                            </ol>
+                        </nav>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+<br />
+
+

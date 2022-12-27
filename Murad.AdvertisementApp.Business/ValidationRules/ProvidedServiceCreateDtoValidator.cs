@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using Murad.AdvertisementApp.Dtos.ProvidedServiceDtos;
+using Murad.AdvertisementApp.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

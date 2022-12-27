@@ -1,4 +1,4 @@
-﻿using Murad.AdvertisementApp.Dtos.ProvidedServiceDtos;
+﻿using Murad.AdvertisementApp.Dtos;
 using Murad.AdvertisementApp.Entity;
 using System;
 using System.Collections.Generic;

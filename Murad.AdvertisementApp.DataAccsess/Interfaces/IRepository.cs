@@ -14,7 +14,7 @@ namespace Murad.AdvertisementApp.DataAccsess.Interfaces
         Task<List<T>> GetAllAsync();
         Task<List<T>> GetAllAsync(Expression<Func<T, bool>> filter);
         Task<List<T>> GetAllAsync<TKey>(Expression<Func<T, TKey>> selector, OrderByType orderByType = OrderByType.DESC);
-        Task<List<T>> GetAllAsync<TKey>(Expression<Func<T, TKey>> selector, Expression<Func<T, bool>> filter, OrderByType orderByType = OrderByType.DESC);
+        Task<List<T>> GetAllAsync<TKey>(Expression<Func<T, bool>> filter, Expression<Func<T, TKey>> selector, OrderByType orderByType = OrderByType.DESC);
 
         Task<T> Find(object id);
         Task<T> GetByFilter(Expression<Func<T, bool>> expression, bool asNoTracking = false);
