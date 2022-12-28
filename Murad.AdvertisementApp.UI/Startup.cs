@@ -1,3 +1,6 @@
+using AutoMapper;
+using FluentValidation;
+using MD.AdvertisementApp.UI.AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -5,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Murad.AdvertisementApp.Business.DependencyResolvers.Microsoft;
+using Murad.AdvertisementApp.Business.Helper;
+using Murad.AdvertisementApp.UI.Models;
+using Murad.AdvertisementApp.UI.ValidationRules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +33,20 @@ namespace Murad.AdvertisementApp.UI
         {
             services.AddControllersWithViews();
             services.AddDependency(Configuration);
+            services.AddTransient<IValidator<UserCreateModel>, UserCreateModelValidator>();
+
+            //-------------------------------AutoMapper-------------------------------
+            var profiles = MapProfileHelper.GetProfiles();
+            profiles.Add(new UserCreateModelProfile());
+
+            var mapperConfugiration = new MapperConfiguration(opt =>
+            {
+                opt.AddProfiles(profiles);
+            });
+
+            var mapper = mapperConfugiration.CreateMapper();
+            services.AddSingleton(mapper);
+            //-------------------------------------------------------------------------
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

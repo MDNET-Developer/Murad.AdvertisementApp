@@ -1,0 +1,60 @@
+﻿@model UserCreateModel
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div style="background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 class="display-4"><strong>Qeydiyyat</strong></h1>
+        <p class="lead">Təqdim olunan vakansiyaları müraciət etmək üşün hesab açın.</p>
+        <br />
+    </div>
+</div>
+<br />
+ <form asp-action="SignUp" asp-controller="Account">
+ <div style="color:darkred" class="text-bg-danger" asp-validation-summary="All"></div>
+<div class="container-fluid">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control">
+        <label for="floatingInput">Adınız</label>
+    </div>
+    <div class="form-floating">
+        <input type="text" class="form-control" >
+        <label for="floatingPassword">Soyadınız</label>
+    </div>
+    <br />
+    <div class="form-floating">
+        <input type="text" class="form-control" >
+        <label for="floatingPassword">İstifadəçi adınız</label>
+    </div>
+    <br />
+    <div class="form-floating">
+        <input type="text" class="form-control" >
+        <label for="floatingPassword">Telefon nömrəniz</label>
+    </div>
+    <br />
+    <select class="form-select" asp-items="@Model.Gender" name="@Model.GenderId" aria-label="Default select example">
+        <option value="0">Cinsiyyət seçin</option>
+    </select>
+    <br />
+    <div class="form-floating">
+        <input type="password" class="form-control" >
+        <label for="floatingPassword">Şifrə</label>
+    </div>
+    <br />
+    <div class="form-floating">
+        <input type="password" class="form-control" >
+        <label for="floatingPassword">Təkrar şifrə</label>
+    </div>
+    <br />
+    <div>
+        <button type="submit" class="btn btn-outline-primary">Qeydiyyatdan keç</button>
+    </div>
+    <br />
+</div>
+</form>
