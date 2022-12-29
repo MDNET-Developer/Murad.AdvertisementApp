@@ -20,35 +20,35 @@
  <div style="color:darkred" class="text-bg-danger" asp-validation-summary="All"></div>
 <div class="container-fluid">
     <div class="form-floating mb-3">
-        <input type="text" class="form-control">
+            <input asp-for="FirstName" type="text" class="form-control">
         <label for="floatingInput">Adınız</label>
     </div>
     <div class="form-floating">
-        <input type="text" class="form-control" >
+            <input asp-for="SurName" type="text" class="form-control">
         <label for="floatingPassword">Soyadınız</label>
     </div>
     <br />
     <div class="form-floating">
-        <input type="text" class="form-control" >
+            <input asp-for="UserName" type="text" class="form-control">
         <label for="floatingPassword">İstifadəçi adınız</label>
     </div>
     <br />
     <div class="form-floating">
-        <input type="text" class="form-control" >
+            <input asp-for="PhoneNumber" type="text" class="form-control">
         <label for="floatingPassword">Telefon nömrəniz</label>
     </div>
     <br />
-    <select class="form-select" asp-items="@Model.Gender" name="@Model.GenderId" aria-label="Default select example">
+        <select class="form-select" asp-for="GenderId" asp-items="@Model.Gender" name="@(nameof(Model.GenderId))" aria-label="Default select example">
         <option value="0">Cinsiyyət seçin</option>
     </select>
     <br />
     <div class="form-floating">
-        <input type="password" class="form-control" >
+        <input asp-for="Password" type="password" class="form-control" >
         <label for="floatingPassword">Şifrə</label>
     </div>
     <br />
     <div class="form-floating">
-        <input type="password" class="form-control" >
+        <input asp-for="ConfirmPassword" type="password" class="form-control" >
         <label for="floatingPassword">Təkrar şifrə</label>
     </div>
     <br />

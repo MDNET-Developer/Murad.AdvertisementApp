@@ -40,6 +40,7 @@ namespace Murad.AdvertisementApp.Business.Services
             {
                 var mapped = _mapper.Map<T>(dto);
                 await _uow.GetRepository<T>().Create(mapped);
+                await _uow.SaveChangesAsync();
                 return new Response<CreateDto>(ResponseType.Success,dto);
             }
             return new Response<CreateDto>(ResponseType.ValidationError, validationresult.ConvertDefaultValidationFromCustomValidationError(),dto);
@@ -71,6 +72,7 @@ namespace Murad.AdvertisementApp.Business.Services
                 return new Response<IDto>(ResponseType.NotFound, $"{id}-li data tapılmadı");
             }
             _uow.GetRepository<T>().Remove(dataid);
+            await _uow.SaveChangesAsync();
             return new Response<IDto>(ResponseType.Success, $"{id}-li data uğurla silindi");
         }
 
@@ -82,6 +84,7 @@ namespace Murad.AdvertisementApp.Business.Services
                 var unchangeddata = await _uow.GetRepository<T>().Find(dto.Id);
                 var mappeddata = _mapper.Map<T>(dto);
                  _uow.GetRepository<T>().Update(mappeddata, unchangeddata);
+                await _uow.SaveChangesAsync();
                 return new Response<UpdateDto>(ResponseType.Success, dto);
             }
             else
