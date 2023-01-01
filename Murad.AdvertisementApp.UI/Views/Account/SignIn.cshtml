@@ -1,0 +1,47 @@
+﻿@model AppUserLoginDto
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<div style="background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 class="display-4"><strong>Daxil ol</strong></h1>
+        <p class="lead">MD Advertosement Web Site.</p>
+        <br />
+    </div>
+</div>
+<br />
+<form asp-action="SingIn" asp-controller="Account">
+    <div style="color:darkred" class="text-bg-danger" asp-validation-summary="All"></div>
+    <div class="container-fluid">
+        <div class="form-floating mb-3">
+            <input  type="text" asp-for="UserName" class="form-control">
+            <label for="floatingInput">İstifadəçi adınız</label>
+        </div>
+        <br />
+        <div class="form-floating">
+            <input  type="password" asp-for="Password" class="form-control">
+            <label for="floatingPassword">Şifrə</label>
+        </div>
+        <br />
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Xatırla məni
+            </label>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-primary">Daxil ol</button>
+        </div>
+        <br />
+    </div>
+</form>
+
+

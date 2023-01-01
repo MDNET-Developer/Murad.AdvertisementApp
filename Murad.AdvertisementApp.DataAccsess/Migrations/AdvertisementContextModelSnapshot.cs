@@ -124,6 +124,18 @@ namespace Murad.AdvertisementApp.DataAccsess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Definition = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Definition = "Member"
+                        });
                 });
 
             modelBuilder.Entity("Murad.AdvertisementApp.Entity.AppUser", b =>

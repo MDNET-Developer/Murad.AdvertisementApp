@@ -4,6 +4,7 @@ using MD.AdvertisementApp.Business.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Murad.AdvertisementApp.Business.Interfaces;
+using Murad.AdvertisementApp.Common.Enums;
 using Murad.AdvertisementApp.Dtos;
 using Murad.AdvertisementApp.UI.Extensions;
 using Murad.AdvertisementApp.UI.Models;
@@ -39,7 +40,7 @@ namespace Murad.AdvertisementApp.UI.Controllers
             if (validationresult.IsValid)
             {
                 var convertToDto = _mapper.Map<AppUserCreateDto>(model);
-                var response = await _appUserService.CreateAsync(convertToDto);
+                var response = await _appUserService.CreateUserWithRole(convertToDto,(int)RoleType.Member);
                 return this.ResponseRedirectToAction( response,"Index", "Default");
             }
             else
@@ -54,6 +55,11 @@ namespace Murad.AdvertisementApp.UI.Controllers
                 return View(model);
             }
            
+        }
+
+        public IActionResult SignIn()
+        {
+            return View();
         }
 
         }

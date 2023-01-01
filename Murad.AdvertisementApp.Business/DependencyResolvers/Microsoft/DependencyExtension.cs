@@ -48,6 +48,7 @@ namespace Murad.AdvertisementApp.Business.DependencyResolvers.Microsoft
             services.AddTransient<IValidator<AppUserUpdateDto>, AppUserUpdateDtoValidator>();
             services.AddTransient<IValidator<GenderCreateDto>, GenderCreateDtoValidator>();
             services.AddTransient<IValidator<GenderUpdateDto>, GenderUpdateDtoValidator>();
+            services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
 
             services.AddTransient<IValidator<AdvertisementCreateDto>, AdvertisementCreateDtoValidator>();
             services.AddTransient<IValidator<AdvertisementUpdateDto>, AdvertisementUpdateDtoValidator>();

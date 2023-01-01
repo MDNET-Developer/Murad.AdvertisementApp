@@ -165,3 +165,4 @@ D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.UI\obj\Debug\net
 D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.UI\obj\Debug\net5.0\Razor\Views\Default\Index.cshtml.g.cs
 D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.UI\obj\Debug\net5.0\Razor\Views\Default\HR.cshtml.g.cs
 D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.UI\obj\Debug\net5.0\Razor\Views\Account\SignUp.cshtml.g.cs
+D:\MyProjects\NEW\Murad.AdvertisementApp\Murad.AdvertisementApp.UI\obj\Debug\net5.0\Razor\Views\Account\SignIn.cshtml.g.cs
